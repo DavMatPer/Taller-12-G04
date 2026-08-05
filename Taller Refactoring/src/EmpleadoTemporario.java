@@ -3,10 +3,10 @@ public class EmpleadoTemporario extends Empleado {
     private String genero;
     private double salarioBase;
     private int horasTrabajadas;
-    private String departamento;
+    private Departamento departamento;
     private int mesesContrato;
 
-    public EmpleadoTemporario(String nombre, double salarioBase, int horasTrabajadas, String departamento, int mesesContrato, String genero) {
+    public EmpleadoTemporario(String nombre, double salarioBase, int horasTrabajadas, Departamento departamento, int mesesContrato, String genero) {
         this.nombre = nombre;
         this.salarioBase = salarioBase;
         this.horasTrabajadas = horasTrabajadas;
@@ -20,7 +20,7 @@ public class EmpleadoTemporario extends Empleado {
         System.out.println("Genero: " + super.getNombre());
         System.out.println("Salario: " + salarioBase);
         System.out.println("Horas trabajadas: " + horasTrabajadas);
-        System.out.println("Departamento: " + departamento);
+        System.out.println("Departamento: " + departamento.getNombre());
         System.out.println("Meses de contrato: " + mesesContrato);
     }
 
