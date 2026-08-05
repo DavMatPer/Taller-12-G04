@@ -26,6 +26,7 @@ public class Empresa {
         return empleadosPorTipo;
     }
 
+    //Move Method
     public Empleado buscarEmpleadoPorNombre(String nombre) {
         for (Empleado empleado : empleados) {
             if (empleado.getNombre().equals(nombre)) {
