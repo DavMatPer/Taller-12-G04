@@ -18,10 +18,10 @@ public class EmpleadoPorHoras extends Empleado {
     }
 
 
-    @Override
+   @Override
     public double calcularSalario() {
-        double salario = super.getHorasTrabajadas() * this.tarifaHora;
-        return salario;
+        // la variable temporal eliminada
+        return super.getHorasTrabajadas() * this.tarifaHora;
     }
         public double getTarifaHora() {
         return tarifaHora;
